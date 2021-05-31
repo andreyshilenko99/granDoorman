@@ -14,3 +14,6 @@ def index(request):
 
 class EventListView(generic.ListView):
     model = Event
+    context_object_name = 'event_list'
+    queryset = Event.time
+    template_name = 'list.html'  # Определение имени вашего шаблона и его расположения

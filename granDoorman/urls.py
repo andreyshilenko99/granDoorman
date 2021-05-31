@@ -28,6 +28,7 @@ urlpatterns = [
 ]
 urlpatterns += [
     path('catalog/', include('menu.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 # urlpatterns += [
 #     path('', RedirectView.as_view(url='menu/', permanent=True)),
